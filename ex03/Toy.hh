@@ -2,7 +2,7 @@
 #ifndef Toy_hpp
 #define Toy_hpp
 
-#include "Picture.hpp"
+#include "Picture.hh"
 #include <string>
 class Toy{
 public:

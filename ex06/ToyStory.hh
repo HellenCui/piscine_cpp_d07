@@ -5,7 +5,7 @@
 #include <fstream>
 #include <iostream>
 #include <string>
-#include "Toy.hpp"
+#include "Toy.hh"
 class ToyStory
 {
 public:

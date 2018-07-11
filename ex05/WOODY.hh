@@ -4,7 +4,7 @@
 #define WOODY_hpp
 
 #include <string>
-#include "Toy.hpp"
+#include "Toy.hh"
 
 class WOODY : public Toy{
 public:

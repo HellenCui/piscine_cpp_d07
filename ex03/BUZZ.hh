@@ -3,7 +3,7 @@
 #define BUZZ_hpp
 
 #include <string>
-#include "Toy.hpp"
+#include "Toy.hh"
 
 class Buzz : public Toy{
 public:
