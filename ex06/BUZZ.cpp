@@ -1,0 +1,29 @@
+
+
+#include "BUZZ.hh"
+#include <iostream>
+Buzz::Buzz(const std::string &name, const std::string &file)
+{
+    if (name.empty()) return;
+    setName(name);
+    setType(BUZZ);
+    if (file.empty()) {
+        setAscii("buzz.txt");
+    }else{
+        setAscii(file);
+    }
+}
+
+Buzz::Buzz(const std::string &name){
+    setName(name);
+}
+
+bool Buzz::speak(const std::string &str){
+    std::cout << "BUZZ: " << _name << " \"" <<  str << "\"" << std::endl;
+    return Toy::speak(str);
+}
+
+bool Buzz::speak_es(const std::string &str){
+    std::cout << "BUZZ: " << _name << " senorita \"" <<  str << "\" senorita" << std::endl;
+    return true;
+}
